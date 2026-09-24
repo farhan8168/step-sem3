@@ -6,14 +6,12 @@ class BookInventory {
     String author;
     int copiesAvailable;
 
-    // Constructor
     BookInventory(String title, String author, int copiesAvailable) {
         this.title = title;
         this.author = author;
         this.copiesAvailable = copiesAvailable;
     }
 
-    // Instance method
     void printEntry() {
         System.out.println(
             title + " by " + author
@@ -40,12 +38,10 @@ public class Problem1_BookInventory {
         BookInventory book4 =
             new BookInventory("Design Patterns", "GoF", 2);
 
-        // Array of objects
         BookInventory[] books = {
             book1, book2, book3, book4
         };
 
-        // Print each book
         for (int i = 0; i < books.length; i++) {
             books[i].printEntry();
         }
